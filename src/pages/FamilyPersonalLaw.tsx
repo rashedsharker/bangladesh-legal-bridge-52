@@ -29,7 +29,7 @@ const FamilyPersonalLaw = () => {
         subtitle="Legal assistance in personal and family matters handled with sensitivity and confidentiality for overseas clients."
         primaryCtaLabel="Request Family Law Assistance"
         primaryCtaHref="#family-contact"
-        secondaryCtaLabel="Back to Other Legal Services"
+        secondaryCtaLabel="Back to Practice Areas"
         secondaryCtaHref="/other-legal-services-bangladesh"
       />
 

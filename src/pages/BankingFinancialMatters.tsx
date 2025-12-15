@@ -28,7 +28,7 @@ const BankingFinancialMatters = () => {
         subtitle="Legal assistance in cheque dishonour, loan recovery, and banking disputes for overseas clients."
         primaryCtaLabel="Discuss Financial Matter"
         primaryCtaHref="#banking-contact"
-        secondaryCtaLabel="Back to Other Legal Services"
+        secondaryCtaLabel="Back to Practice Areas"
         secondaryCtaHref="/other-legal-services-bangladesh"
       />
 

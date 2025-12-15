@@ -6,6 +6,7 @@ import { CTASection } from "@/components/CTASection";
 import { ContactForm } from "@/components/ContactForm";
 import { usePageSEO } from "@/hooks/usePageSEO";
 import { Link } from "react-router-dom";
+import { ShieldCheck, Globe2, Scale } from "lucide-react";
 import heroLadyJustice from "@/assets/home-hero-lady-justice.png";
 
 const Index = () => {
@@ -54,15 +55,15 @@ const Index = () => {
             </div>
             <div className="mt-6 flex flex-wrap gap-6 text-xs md:text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+                <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
                 <span>Practicing Advocate in Bangladesh</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-                <span>Serving international individuals & businesses</span>
+                <Globe2 className="h-4 w-4 text-accent" aria-hidden="true" />
+                <span>Serving international individuals &amp; businesses</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+                <Scale className="h-4 w-4 text-accent" aria-hidden="true" />
                 <span>Confidential, ethics-driven legal practice</span>
               </div>
             </div>
@@ -200,10 +201,10 @@ const Index = () => {
           <header className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="eyebrow">Broader Bangladesh Legal Support</p>
-              <h2 className="text-2xl md:text-3xl font-semibold">Other legal services for overseas clients.</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">Practice Areas for overseas clients.</h2>
             </div>
             <Button asChild variant="ghost">
-              <Link to="/other-legal-services-bangladesh">View full service list</Link>
+              <Link to="/other-legal-services-bangladesh">View all practice areas</Link>
             </Button>
           </header>
           <div className="grid gap-5 md:grid-cols-3">

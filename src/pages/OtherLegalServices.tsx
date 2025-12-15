@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const OtherLegalServices = () => {
   usePageSEO({
-    title: "Other Legal Services for Overseas Clients in Bangladesh",
+    title: "Practice Areas for Overseas Clients in Bangladesh",
     description:
       "Full range of Bangladesh legal services for overseas clients, including litigation, property, family, corporate, documentation, banking and verification.",
     canonicalPath: "/other-legal-services-bangladesh",
@@ -87,7 +87,7 @@ const OtherLegalServices = () => {
   return (
     <MainLayout>
       <PageHero
-        eyebrow="Other Legal Services"
+        eyebrow="Practice Areas"
         title="Comprehensive Legal Services in Bangladesh"
         subtitle="In addition to our specialized services, we provide full-service legal assistance across major areas of Bangladesh law for overseas clients."
         primaryCtaLabel="Discuss Your Legal Issue"
@@ -137,7 +137,7 @@ const OtherLegalServices = () => {
               a commercial dispute connected to banking facilities—you can use this section to set out the full picture.
             </p>
           </div>
-          <ContactForm serviceHint="Other Legal Services (e.g. Property, Litigation, Family)" />
+          <ContactForm serviceHint="Practice Areas (e.g. Property, Litigation, Family)" />
         </div>
       </section>
 

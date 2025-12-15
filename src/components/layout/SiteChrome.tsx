@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const navItems = [
   { label: "Home", to: "/" },
   { label: "Special Services", to: "/special-legal-services-bangladesh" },
-  { label: "Other Legal Services", to: "/other-legal-services-bangladesh" },
+  { label: "Practice Areas", to: "/other-legal-services-bangladesh" },
   { label: "How It Works", to: "/how-it-works" },
   { label: "Payment & Fees", to: "/payment-and-fees" },
   { label: "About Us", to: "/about" },
@@ -76,7 +76,7 @@ export const SiteFooter = () => {
               </li>
               <li>
                 <Link to="/other-legal-services-bangladesh" className="story-link">
-                  Other Legal Services
+                  Practice Areas
                 </Link>
               </li>
               <li>
