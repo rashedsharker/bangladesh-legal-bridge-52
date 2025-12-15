@@ -19,33 +19,36 @@ const Index = () => {
 
   return (
     <MainLayout>
-      <section className="hero-paper border-b">
-        <div className="container grid gap-12 py-16 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] md:items-center">
-          <div className="space-y-6 animate-fade-in">
-            <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-accent">
+      <section className="border-b bg-background">
+        <div className="container grid min-h-[85vh] items-center gap-12 py-16 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] md:py-24 lg:gap-20 lg:py-28">
+          {/* Left: Editorial text */}
+          <div className="order-2 max-w-xl space-y-8 md:order-1">
+            <p className="text-[11px] font-semibold tracking-[0.35em] text-accent-foreground/90 uppercase">
               INTERNATIONAL LEGAL SERVICES | BANGLADESH
             </p>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+            <h1 className="text-4xl font-bold leading-[1.05] text-foreground md:text-6xl lg:text-7xl">
               Resolving Legal Complexities
               <br className="hidden md:block" />
               with Clarity and Confidence
             </h1>
-            <p className="max-w-xl text-sm md:text-base lg:text-lg font-medium text-muted-foreground">
-              Professional legal assistance in Bangladesh for overseas clients, including legal notices, money recovery,
-              investigations, contracts, and court representation—handled by a practicing Advocate.
+            <p className="max-w-xl text-sm font-medium text-muted-foreground md:text-base lg:text-lg">
+              Professional legal assistance in Bangladesh for overseas clients,
+              covering legal notices, money recovery, investigations, contracts,
+              and court representationhandled by a practicing Advocate.
             </p>
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+
+            <div className="flex flex-col gap-3 pt-4 sm:flex-row sm:items-center">
               <Button
                 size="lg"
-                className="rounded-md bg-accent px-6 text-sm font-semibold text-accent-foreground hover:bg-accent/90"
+                className="rounded-lg bg-accent px-8 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-card)] hover:bg-accent/90 md:text-base"
                 asChild
               >
                 <a href="#contact">Start Legal Process</a>
               </Button>
               <Button
-                variant="ghost"
+                variant="outline"
                 size="lg"
-                className="px-0 text-sm font-semibold text-foreground hover:bg-transparent hover:text-foreground"
+                className="border-border bg-transparent px-0 text-sm font-medium text-foreground hover:bg-transparent hover:text-foreground md:text-base"
                 asChild
               >
                 <Link to="/special-legal-services-bangladesh" className="story-link">
@@ -53,30 +56,43 @@ const Index = () => {
                 </Link>
               </Button>
             </div>
-            <div className="mt-6 flex flex-wrap gap-6 text-xs md:text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
-                <span>Practicing Advocate in Bangladesh</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Globe2 className="h-4 w-4 text-accent" aria-hidden="true" />
-                <span>Serving international individuals &amp; businesses</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Scale className="h-4 w-4 text-accent" aria-hidden="true" />
-                <span>Confidential, ethics-driven legal practice</span>
+
+            <div className="mt-8 border-t pt-6 text-xs text-muted-foreground md:text-sm">
+              <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-x-10 sm:gap-y-3">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full border border-accent/70 bg-background/60">
+                    <ShieldCheck className="h-4 w-4 text-accent" aria-hidden="true" />
+                  </span>
+                  <span>Practicing Advocate in Bangladesh</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full border border-accent/70 bg-background/60">
+                    <Globe2 className="h-4 w-4 text-accent" aria-hidden="true" />
+                  </span>
+                  <span>Serving international individuals &amp; businesses</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full border border-accent/70 bg-background/60">
+                    <Scale className="h-4 w-4 text-accent" aria-hidden="true" />
+                  </span>
+                  <span>Confidential &amp; ethical legal practice</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="relative order-first flex justify-center md:order-none">
-            <div className="relative h-64 w-52 xs:h-72 xs:w-56 sm:h-80 sm:w-64 md:h-[340px] md:w-[260px] lg:h-[380px] lg:w-[280px]">
+          {/* Right: Dominant editorial visual */}
+          <div className="order-1 flex justify-center md:order-2">
+            <div className="relative mx-auto h-72 w-56 xs:h-80 xs:w-60 sm:h-[22rem] sm:w-64 md:h-[26rem] md:w-72 lg:h-[28rem] lg:w-80">
+              <div className="absolute inset-0 rounded-[2.25rem] border bg-card shadow-[var(--shadow-soft)]" />
               <img
                 src={heroLadyJustice}
                 alt="Bronze Lady Justice statue representing international legal services in Bangladesh"
-                className="h-full w-full object-contain object-bottom drop-shadow-xl"
+                className="relative z-10 h-full w-full object-contain object-bottom mix-blend-multiply"
                 loading="lazy"
               />
+              <div className="pointer-events-none absolute -left-6 top-8 h-14 w-14 rounded-full border border-accent/60 bg-background/80" />
+              <div className="pointer-events-none absolute -right-5 bottom-10 h-10 w-24 rounded-full border border-accent/40 bg-background/70" />
             </div>
           </div>
         </div>
