@@ -20,6 +20,7 @@ import BankingFinancialMatters from "./pages/BankingFinancialMatters";
 import VerificationSearchServices from "./pages/VerificationSearchServices";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
+import PropertyRealEstate from "./pages/PropertyRealEstate";
 import { ServiceDetailPage } from "@/components/ServiceDetailPage";
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/verification-search-services-bangladesh" element={<VerificationSearchServices />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/property-real-estate-bangladesh" element={<PropertyRealEstate />} />
 
           {/* Special service detail pages */}
           <Route
@@ -262,6 +264,87 @@ const App = () => (
                 primaryCtaLabel="Discuss succession or inheritance"
                 serviceName="Succession & Inheritance"
                 categoryLabel="Family & Personal Law"
+              />
+            }
+          />
+          {/* Property & Real Estate child pages */}
+          <Route
+            path="/property-disputes-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Property Disputes in Bangladesh for Overseas Clients"
+                seoDescription="Support with contested property and possession disputes in Bangladesh for overseas owners and heirs."
+                canonicalPath="/property-disputes-bangladesh"
+                eyebrow="Property & Real Estate"
+                heroTitle="Property and possession disputes connected to Bangladesh."
+                heroSubtitle="Guidance and representation in Bangladesh property disputes, including possession, co-ownership and unauthorised occupation issues."
+                primaryCtaLabel="Discuss a property dispute"
+                serviceName="Property Disputes"
+                categoryLabel="Property & Real Estate"
+              />
+            }
+          />
+          <Route
+            path="/land-title-verification-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Land & Title Verification in Bangladesh"
+                seoDescription="Land and title record verification in Bangladesh for overseas purchasers, investors and heirs."
+                canonicalPath="/land-title-verification-bangladesh"
+                eyebrow="Property & Real Estate"
+                heroTitle="Verification of land and title records in Bangladesh."
+                heroSubtitle="Structured verification of land documents, mutation and registry records before you commit to a transaction or strategy involving Bangladesh property."
+                primaryCtaLabel="Request land & title verification"
+                serviceName="Land & Title Verification"
+                categoryLabel="Property & Real Estate"
+              />
+            }
+          />
+          <Route
+            path="/sale-deed-agreement-review-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Sale Deed & Agreement Review under Bangladesh Law"
+                seoDescription="Review of sale deeds and related agreements for Bangladesh property transactions involving overseas parties."
+                canonicalPath="/sale-deed-agreement-review-bangladesh"
+                eyebrow="Property & Real Estate"
+                heroTitle="Review of Bangladesh property sale deeds and related agreements."
+                heroSubtitle="Bangladesh-law review of draft or executed sale deeds, powers of attorney and collateral documents before or after a property transaction."
+                primaryCtaLabel="Review a sale deed or agreement"
+                serviceName="Sale Deed / Agreement Review"
+                categoryLabel="Property & Real Estate"
+              />
+            }
+          />
+          <Route
+            path="/property-due-diligence-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Property Due Diligence in Bangladesh"
+                seoDescription="Property due diligence in Bangladesh for proposed acquisitions, investments and restructuring by overseas clients."
+                canonicalPath="/property-due-diligence-bangladesh"
+                eyebrow="Property & Real Estate"
+                heroTitle="Structured property due diligence in Bangladesh."
+                heroSubtitle="Fact-specific due diligence on property status, encumbrances and counterparties in Bangladesh before you commit capital or restructure holdings."
+                primaryCtaLabel="Request property due diligence"
+                serviceName="Property Due Diligence"
+                categoryLabel="Property & Real Estate"
+              />
+            }
+          />
+          <Route
+            path="/inheritance-succession-property-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Inheritance & Succession for Bangladesh Property"
+                seoDescription="Inheritance and succession advice focused on Bangladesh-situated property for overseas heirs and families."
+                canonicalPath="/inheritance-succession-property-bangladesh"
+                eyebrow="Property & Real Estate"
+                heroTitle="Inheritance and succession issues involving Bangladesh property."
+                heroSubtitle="Advice on heirship, division and transfer of Bangladesh property under local succession and personal law rules."
+                primaryCtaLabel="Discuss inheritance-linked property"
+                serviceName="Inheritance & Succession Matters"
+                categoryLabel="Property & Real Estate"
               />
             }
           />
