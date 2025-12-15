@@ -13,6 +13,13 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import ContactPage from "./pages/Contact";
 import Disclaimer from "./pages/Disclaimer";
+import FamilyPersonalLaw from "./pages/FamilyPersonalLaw";
+import BusinessCorporateLegal from "./pages/BusinessCorporateLegal";
+import DocumentationAdvisory from "./pages/DocumentationAdvisory";
+import BankingFinancialMatters from "./pages/BankingFinancialMatters";
+import VerificationSearchServices from "./pages/VerificationSearchServices";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 import { ServiceDetailPage } from "@/components/ServiceDetailPage";
 
 const queryClient = new QueryClient();
@@ -33,6 +40,13 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/family-personal-law-bangladesh" element={<FamilyPersonalLaw />} />
+          <Route path="/business-corporate-legal-services-bangladesh" element={<BusinessCorporateLegal />} />
+          <Route path="/documentation-advisory-bangladesh" element={<DocumentationAdvisory />} />
+          <Route path="/banking-financial-matters-bangladesh" element={<BankingFinancialMatters />} />
+          <Route path="/verification-search-services-bangladesh" element={<VerificationSearchServices />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
 
           {/* Special service detail pages */}
           <Route
@@ -199,6 +213,347 @@ const App = () => (
                 primaryCtaLabel="Discuss a Recovery Suit"
                 serviceName="Recovery Suits"
                 categoryLabel="Litigation & Dispute Resolution"
+              />
+            }
+          />
+          {/* Family & Personal Law child pages */}
+          <Route
+            path="/divorce-matrimonial-disputes-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Divorce & Matrimonial Disputes in Bangladesh for Overseas Clients"
+                seoDescription="Assistance with divorce and matrimonial disputes in Bangladesh for overseas clients."
+                canonicalPath="/divorce-matrimonial-disputes-bangladesh"
+                eyebrow="Family & Personal Law"
+                heroTitle="Divorce and matrimonial disputes involving Bangladesh."
+                heroSubtitle="Support with divorce, separation and related matrimonial disputes where Bangladesh law or courts are involved."
+                primaryCtaLabel="Discuss a matrimonial issue"
+                serviceName="Divorce & Matrimonial Disputes"
+                categoryLabel="Family & Personal Law"
+              />
+            }
+          />
+          <Route
+            path="/maintenance-custody-matters-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Maintenance & Custody Matters in Bangladesh"
+                seoDescription="Support for maintenance and child custody matters linked to Bangladesh for overseas clients."
+                canonicalPath="/maintenance-custody-matters-bangladesh"
+                eyebrow="Family & Personal Law"
+                heroTitle="Maintenance and custody matters under Bangladesh law."
+                heroSubtitle="Guidance on maintenance, guardianship and custody applications involving children or dependants connected to Bangladesh."
+                primaryCtaLabel="Discuss maintenance or custody"
+                serviceName="Maintenance & Custody Matters"
+                categoryLabel="Family & Personal Law"
+              />
+            }
+          />
+          <Route
+            path="/succession-inheritance-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Succession & Inheritance in Bangladesh"
+                seoDescription="Succession and inheritance advice under Bangladesh law for overseas heirs and family members."
+                canonicalPath="/succession-inheritance-bangladesh"
+                eyebrow="Family & Personal Law"
+                heroTitle="Succession and inheritance issues involving Bangladesh property and family."
+                heroSubtitle="Assistance with succession planning and inheritance disputes where assets or heirs are linked to Bangladesh."
+                primaryCtaLabel="Discuss succession or inheritance"
+                serviceName="Succession & Inheritance"
+                categoryLabel="Family & Personal Law"
+              />
+            }
+          />
+          <Route
+            path="/personal-law-issues-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Muslim, Hindu & Christian Personal Law Issues in Bangladesh"
+                seoDescription="Advice on Muslim, Hindu and Christian personal law issues in Bangladesh for overseas clients."
+                canonicalPath="/personal-law-issues-bangladesh"
+                eyebrow="Family & Personal Law"
+                heroTitle="Personal law issues under Bangladesh Muslim, Hindu and Christian law."
+                heroSubtitle="Understanding how religion-specific personal law in Bangladesh affects marriage, divorce, maintenance and succession."
+                primaryCtaLabel="Discuss a personal law issue"
+                serviceName="Muslim / Hindu / Christian Personal Law Issues"
+                categoryLabel="Family & Personal Law"
+              />
+            }
+          />
+          {/* Business & Corporate Legal Services child pages */}
+          <Route
+            path="/business-legal-advisory-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Business Legal Advisory in Bangladesh"
+                seoDescription="Business legal advisory for Bangladesh-related matters affecting overseas stakeholders."
+                canonicalPath="/business-legal-advisory-bangladesh"
+                eyebrow="Business & Corporate Legal Services"
+                heroTitle="Business legal advisory for Bangladesh operations and transactions."
+                heroSubtitle="Strategic legal input on business decisions, risk allocation and documentation involving Bangladesh."
+                primaryCtaLabel="Request business legal advisory"
+                serviceName="Business Legal Advisory"
+                categoryLabel="Business & Corporate Legal Services"
+              />
+            }
+          />
+          <Route
+            path="/company-agreements-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Company Agreements in Bangladesh"
+                seoDescription="Preparation and review of company agreements in Bangladesh for overseas stakeholders."
+                canonicalPath="/company-agreements-bangladesh"
+                eyebrow="Business & Corporate Legal Services"
+                heroTitle="Company-level agreements governed by Bangladesh law."
+                heroSubtitle="Support with drafting and reviewing core company agreements linked to Bangladesh entities."
+                primaryCtaLabel="Discuss company agreements"
+                serviceName="Company Agreements"
+                categoryLabel="Business & Corporate Legal Services"
+              />
+            }
+          />
+          <Route
+            path="/shareholder-agreements-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Shareholder Agreements in Bangladesh"
+                seoDescription="Shareholder agreement drafting and review in Bangladesh for overseas investors and partners."
+                canonicalPath="/shareholder-agreements-bangladesh"
+                eyebrow="Business & Corporate Legal Services"
+                heroTitle="Shareholder agreements for Bangladesh companies."
+                heroSubtitle="Structuring rights and obligations of shareholders in Bangladesh-incorporated entities."
+                primaryCtaLabel="Discuss a shareholder agreement"
+                serviceName="Shareholder Agreements"
+                categoryLabel="Business & Corporate Legal Services"
+              />
+            }
+          />
+          <Route
+            path="/legal-compliance-support-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Legal Compliance Support in Bangladesh"
+                seoDescription="Legal compliance support for Bangladesh operations serving overseas stakeholders."
+                canonicalPath="/legal-compliance-support-bangladesh"
+                eyebrow="Business & Corporate Legal Services"
+                heroTitle="Legal compliance support for Bangladesh-based operations."
+                heroSubtitle="Identifying and addressing regulatory obligations that affect your business activities in Bangladesh."
+                primaryCtaLabel="Discuss compliance support"
+                serviceName="Legal Compliance Support"
+                categoryLabel="Business & Corporate Legal Services"
+              />
+            }
+          />
+          <Route
+            path="/commercial-contracts-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Commercial Contracts in Bangladesh"
+                seoDescription="Commercial contract drafting and review in Bangladesh for overseas clients."
+                canonicalPath="/commercial-contracts-bangladesh"
+                eyebrow="Business & Corporate Legal Services"
+                heroTitle="Commercial contracts governed by Bangladesh law."
+                heroSubtitle="Preparing and reviewing commercial contracts to manage risk and support enforceability in Bangladesh."
+                primaryCtaLabel="Discuss commercial contracts"
+                serviceName="Commercial Contracts"
+                categoryLabel="Business & Corporate Legal Services"
+              />
+            }
+          />
+          {/* Documentation & Advisory child pages */}
+          <Route
+            path="/legal-opinion-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Legal Opinion in Bangladesh for Overseas Clients"
+                seoDescription="Formal Bangladesh-law legal opinions for overseas clients."
+                canonicalPath="/legal-opinion-bangladesh"
+                eyebrow="Documentation & Advisory"
+                heroTitle="Bangladesh-law legal opinions for transactions and disputes."
+                heroSubtitle="Issuing structured legal opinions so overseas clients can make informed decisions involving Bangladesh."
+                primaryCtaLabel="Request a legal opinion"
+                serviceName="Legal Opinion"
+                categoryLabel="Documentation & Advisory"
+              />
+            }
+          />
+          <Route
+            path="/power-of-attorney-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Power of Attorney for Bangladesh Matters"
+                seoDescription="Preparation and review of powers of attorney for use in Bangladesh."
+                canonicalPath="/power-of-attorney-bangladesh"
+                eyebrow="Documentation & Advisory"
+                heroTitle="Powers of attorney suitable for Bangladesh use."
+                heroSubtitle="Drafting and reviewing powers of attorney intended to be used before Bangladesh authorities and counterparties."
+                primaryCtaLabel="Discuss a power of attorney"
+                serviceName="Power of Attorney"
+                categoryLabel="Documentation & Advisory"
+              />
+            }
+          />
+          <Route
+            path="/affidavits-declarations-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Affidavits & Declarations in Bangladesh"
+                seoDescription="Preparation of affidavits and declarations for use in Bangladesh."
+                canonicalPath="/affidavits-declarations-bangladesh"
+                eyebrow="Documentation & Advisory"
+                heroTitle="Affidavits and declarations for Bangladesh courts and authorities."
+                heroSubtitle="Preparing sworn statements that comply with Bangladesh evidentiary and procedural rules."
+                primaryCtaLabel="Discuss affidavits or declarations"
+                serviceName="Affidavits & Declarations"
+                categoryLabel="Documentation & Advisory"
+              />
+            }
+          />
+          <Route
+            path="/legal-vetting-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Legal Vetting in Bangladesh"
+                seoDescription="Legal vetting of documents and structures under Bangladesh law for overseas clients."
+                canonicalPath="/legal-vetting-bangladesh"
+                eyebrow="Documentation & Advisory"
+                heroTitle="Legal vetting of documents and structures involving Bangladesh."
+                heroSubtitle="Reviewing documentation and arrangements to identify legal and procedural risk under Bangladesh law."
+                primaryCtaLabel="Request legal vetting"
+                serviceName="Legal Vetting"
+                categoryLabel="Documentation & Advisory"
+              />
+            }
+          />
+          <Route
+            path="/drafting-documentation-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Drafting & Documentation in Bangladesh"
+                seoDescription="Drafting and preparation of Bangladesh-compliant legal documentation for overseas clients."
+                canonicalPath="/drafting-documentation-bangladesh"
+                eyebrow="Documentation & Advisory"
+                heroTitle="Drafting and preparation of Bangladesh legal documentation."
+                heroSubtitle="Preparing clear, enforceable documentation that can be relied on in Bangladesh if a matter escalates."
+                primaryCtaLabel="Discuss drafting requirements"
+                serviceName="Drafting & Documentation"
+                categoryLabel="Documentation & Advisory"
+              />
+            }
+          />
+          {/* Banking & Financial Matters child pages */}
+          <Route
+            path="/cheque-dishonour-ni-act-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Cheque Dishonour (NI Act) Cases in Bangladesh"
+                seoDescription="Support with cheque dishonour (NI Act) proceedings in Bangladesh for overseas clients."
+                canonicalPath="/cheque-dishonour-ni-act-bangladesh"
+                eyebrow="Banking & Financial Matters"
+                heroTitle="Cheque dishonour proceedings under the NI Act in Bangladesh."
+                heroSubtitle="Advising on and pursuing cheque dishonour claims where instruments are drawn or payable in Bangladesh."
+                primaryCtaLabel="Discuss a cheque dishonour matter"
+                serviceName="Cheque Dishonour (NI Act)"
+                categoryLabel="Banking & Financial Matters"
+              />
+            }
+          />
+          <Route
+            path="/loan-recovery-support-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Loan Recovery Support in Bangladesh"
+                seoDescription="Loan recovery support and related actions in Bangladesh for overseas lenders and guarantors."
+                canonicalPath="/loan-recovery-support-bangladesh"
+                eyebrow="Banking & Financial Matters"
+                heroTitle="Loan recovery support for Bangladesh-connected facilities."
+                heroSubtitle="Combining contractual remedies and statutory tools to recover sums due under Bangladesh-linked facilities."
+                primaryCtaLabel="Discuss loan recovery"
+                serviceName="Loan Recovery Support"
+                categoryLabel="Banking & Financial Matters"
+              />
+            }
+          />
+          <Route
+            path="/banking-disputes-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Banking Disputes in Bangladesh"
+                seoDescription="Banking dispute resolution in Bangladesh for overseas clients."
+                canonicalPath="/banking-disputes-bangladesh"
+                eyebrow="Banking & Financial Matters"
+                heroTitle="Banking disputes involving Bangladesh banks and financial institutions."
+                heroSubtitle="Assistance in disputes with Bangladesh banks and financial institutions affecting overseas clients."
+                primaryCtaLabel="Discuss a banking dispute"
+                serviceName="Banking Disputes"
+                categoryLabel="Banking & Financial Matters"
+              />
+            }
+          />
+          {/* Verification & Search Services child pages */}
+          <Route
+            path="/court-case-search-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Court Case Search in Bangladesh"
+                seoDescription="Court case search services in Bangladesh for overseas clients."
+                canonicalPath="/court-case-search-bangladesh"
+                eyebrow="Verification & Search Services"
+                heroTitle="Court case search in Bangladesh."
+                heroSubtitle="Identifying and tracking court proceedings in Bangladesh relevant to your matter or counterparties."
+                primaryCtaLabel="Request a court case search"
+                serviceName="Court Case Search"
+                categoryLabel="Verification & Search Services"
+              />
+            }
+          />
+          <Route
+            path="/criminal-record-search-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Criminal Record Search in Bangladesh"
+                seoDescription="Criminal record search services in Bangladesh for overseas clients."
+                canonicalPath="/criminal-record-search-bangladesh"
+                eyebrow="Verification & Search Services"
+                heroTitle="Criminal record search in Bangladesh."
+                heroSubtitle="Checking available records to identify whether individuals have reported criminal history in Bangladesh."
+                primaryCtaLabel="Request a criminal record search"
+                serviceName="Criminal Record Search"
+                categoryLabel="Verification & Search Services"
+              />
+            }
+          />
+          <Route
+            path="/business-background-check-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Business Background Check in Bangladesh"
+                seoDescription="Business background check services in Bangladesh for overseas counterparties."
+                canonicalPath="/business-background-check-bangladesh"
+                eyebrow="Verification & Search Services"
+                heroTitle="Business background checks on Bangladesh counterparties."
+                heroSubtitle="Reviewing corporate, litigation and regulatory footprints of Bangladesh businesses you plan to engage with."
+                primaryCtaLabel="Request a business background check"
+                serviceName="Business Background Check"
+                categoryLabel="Verification & Search Services"
+              />
+            }
+          />
+          <Route
+            path="/property-record-search-bangladesh"
+            element={
+              <ServiceDetailPage
+                seoTitle="Property Record Search in Bangladesh"
+                seoDescription="Property record search services in Bangladesh for overseas clients."
+                canonicalPath="/property-record-search-bangladesh"
+                eyebrow="Verification & Search Services"
+                heroTitle="Property record search in Bangladesh."
+                heroSubtitle="Identifying recorded ownership, encumbrances and related matters affecting Bangladesh property."
+                primaryCtaLabel="Request a property record search"
+                serviceName="Property Record Search"
+                categoryLabel="Verification & Search Services"
               />
             }
           />

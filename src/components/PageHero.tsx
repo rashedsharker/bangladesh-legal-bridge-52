@@ -23,7 +23,8 @@ export const PageHero = ({
   rightElement,
 }: PageHeroProps) => {
   return (
-    <section className="relative overflow-hidden border-b bg-[radial-gradient(circle_at_top,_hsl(222_60%_18%)_0,_hsl(222_60%_12%)_35%,_hsl(222_45%_10%)_70%)] text-primary-foreground">
+    <section className="relative overflow-hidden border-b bg-[radial-gradient(circle_at_top,_hsl(222_60%_12%)_0,_hsl(222_60%_10%)_40%,_hsl(222_45%_8%)_75%)] text-primary-foreground">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/10 via-background/70 to-background/90 opacity-80" />
       <div className="pointer-events-none absolute inset-0 opacity-40 mix-blend-screen">
         <div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-accent blur-3xl" />
         <div className="absolute bottom-0 right-0 h-[320px] w-[320px] rounded-full bg-primary blur-3xl" />
