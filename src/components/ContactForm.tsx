@@ -50,15 +50,40 @@ export const ContactForm = ({ serviceHint }: ContactFormProps) => {
     },
   });
 
-  const onSubmit = (values: ContactFormValues) => {
-    // No backend as requested: simulate success and encourage direct email.
-    console.info("Contact form submitted (not sent to backend):", values);
-    toast({
-      title: "Form not yet connected",
-      description:
-        "Your details are validated locally only. Please copy this information into an email to proceed with your matter.",
-    });
-    reset({ ...values, issue: "" });
+  const onSubmit = async (values: ContactFormValues) => {
+    try {
+      const subject = "New Bangladesh legal enquiry";
+      const bodyLines = [
+        `Name: ${values.name}`,
+        `Country: ${values.country}`,
+        `Email: ${values.email}`,
+        `Service: ${values.service}`,
+        `Urgency: ${values.urgency}`,
+        "",
+        "Issue:",
+        values.issue,
+      ];
+      const mailtoHref = `mailto:contact@meridianchambers.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        bodyLines.join("\n"),
+      )}`;
+
+      window.location.href = mailtoHref;
+
+      toast({
+        title: "Submission prepared",
+        description:
+          "Thank you. Your submission has been received. We will review your matter and respond accordingly.",
+      });
+
+      reset({ ...values, issue: "" });
+    } catch (error) {
+      console.error("Contact form submission error", error);
+      toast({
+        title: "There was a problem preparing your message",
+        description: "Please try again or email contact@meridianchambers.com directly.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -122,7 +147,7 @@ export const ContactForm = ({ serviceHint }: ContactFormProps) => {
         matter is formally accepted in writing. Please do not share passwords or extremely sensitive identifiers.
       </p>
       <Button type="submit" className="w-full" disabled={isSubmitting}>
-        Start Legal Process (Local Preview Only)
+        {isSubmitting ? "Submitting..." : "Start Legal Process"}
       </Button>
     </form>
   );
