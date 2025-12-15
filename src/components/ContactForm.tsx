@@ -12,7 +12,22 @@ const contactSchema = z.object({
   email: z.string().trim().email("Please enter a valid email address."),
   service: z.string().trim().min(2, "Please select or describe a service."),
   urgency: z.string().trim().min(2, "Please indicate the urgency."),
-  issue: z.string().trim().min(20, "Please describe your issue with at least 20 characters."),
+  issue: z
+    .string()
+    .trim()
+    .min(20, "Please describe your issue with at least 20 characters."),
+  documents: z
+    .any()
+    .optional()
+    .refine(
+      (files) => {
+        if (!files || (files instanceof FileList && files.length === 0)) return true;
+        if (!(files instanceof FileList)) return false;
+        if (files.length > 5) return false;
+        return Array.from(files).every((file) => file.size <= 5 * 1024 * 1024);
+      },
+      { message: "You may attach up to 5 documents, each up to 5MB." },
+    ),
 });
 
 type ContactFormValues = z.infer<typeof contactSchema>;
@@ -88,6 +103,19 @@ export const ContactForm = ({ serviceHint }: ContactFormProps) => {
           {...register("issue")}
         />
         {errors.issue && <p className="text-xs text-destructive">{errors.issue.message}</p>}
+      </div>
+      <div className="space-y-1">
+        <label className="text-sm font-medium">Attach documents (optional)</label>
+        <Input
+          type="file"
+          multiple
+          accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+          {...register("documents")}
+        />
+        {errors.documents && <p className="text-xs text-destructive">{errors.documents.message as string}</p>}
+        <p className="text-[11px] leading-relaxed text-muted-foreground">
+          Files selected here are validated in your browser only and are not uploaded to any server at this stage.
+        </p>
       </div>
       <p className="text-[11px] leading-relaxed text-muted-foreground">
         By submitting this form you acknowledge that no lawyer–client relationship is created unless and until your
