@@ -144,5 +144,13 @@ All colors MUST be HSL.
   .text-hero-strong {
     text-shadow: 0 10px 30px hsl(var(--primary) / 0.7);
   }
+
+  .hero-paper {
+    background-image:
+      radial-gradient(circle at 0 0, hsl(40 30% 96%) 0, transparent 55%),
+      radial-gradient(circle at 100% 20%, hsl(40 25% 94%) 0, transparent 55%),
+      linear-gradient(135deg, hsl(40 20% 97%), hsl(40 18% 95%));
+    background-color: hsl(var(--background));
+  }
 }
 
