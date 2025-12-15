@@ -30,7 +30,7 @@ const DocumentationAdvisory = () => {
         subtitle="Where documents must be valid, enforceable and usable before Bangladesh authorities, this practice prepares and vets documentation with jurisdiction-specific precision."
         primaryCtaLabel="Discuss documentation needs"
         primaryCtaHref="#documentation-contact"
-        secondaryCtaLabel="Back to Other Legal Services"
+        secondaryCtaLabel="Back to Practice Areas"
         secondaryCtaHref="/other-legal-services-bangladesh"
       />
 

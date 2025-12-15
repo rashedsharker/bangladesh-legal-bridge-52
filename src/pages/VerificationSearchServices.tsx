@@ -29,7 +29,7 @@ const VerificationSearchServices = () => {
         subtitle="Court, criminal, business, and property record searches conducted for overseas clients requiring verified legal information."
         primaryCtaLabel="Request Verification"
         primaryCtaHref="#verification-contact"
-        secondaryCtaLabel="Back to Other Legal Services"
+        secondaryCtaLabel="Back to Practice Areas"
         secondaryCtaHref="/other-legal-services-bangladesh"
       />
 

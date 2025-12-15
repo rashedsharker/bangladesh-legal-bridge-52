@@ -30,7 +30,7 @@ const PropertyRealEstate = () => {
         subtitle="Legal support for overseas property owners involving disputes, verification, documentation, and due diligence under Bangladesh law."
         primaryCtaLabel="Request Property Legal Assistance"
         primaryCtaHref="#property-contact"
-        secondaryCtaLabel="Back to Other Legal Services"
+        secondaryCtaLabel="Back to Practice Areas"
         secondaryCtaHref="/other-legal-services-bangladesh"
       />
 

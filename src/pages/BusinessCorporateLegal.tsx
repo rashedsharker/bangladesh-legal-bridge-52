@@ -30,7 +30,7 @@ const BusinessCorporateLegal = () => {
         subtitle="Legal support for overseas businesses and investors operating or dealing with entities in Bangladesh."
         primaryCtaLabel="Discuss Business Legal Needs"
         primaryCtaHref="#business-contact"
-        secondaryCtaLabel="Back to Other Legal Services"
+        secondaryCtaLabel="Back to Practice Areas"
         secondaryCtaHref="/other-legal-services-bangladesh"
       />
 
