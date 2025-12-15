@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import { Facebook, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -8,9 +9,6 @@ const navItems = [
   { label: "How It Works", to: "/how-it-works" },
   { label: "Payment & Fees", to: "/payment-and-fees" },
   { label: "About Us", to: "/about" },
-  { label: "FAQ", to: "/faq" },
-  { label: "Contact", to: "/contact" },
-  { label: "Disclaimer", to: "/disclaimer" },
 ];
 
 export const SiteHeader = () => {
@@ -54,21 +52,119 @@ export const SiteHeader = () => {
 export const SiteFooter = () => {
   return (
     <footer className="border-t bg-primary text-primary-foreground">
-      <div className="container flex flex-col gap-6 py-10 md:flex-row md:items-end md:justify-between">
-        <div className="max-w-xl space-y-3">
+      <div className="container grid gap-10 py-10 md:grid-cols-[2fr,3fr]">
+        <div className="space-y-4">
           <p className="eyebrow text-accent-foreground/80">Meridian Chambers Bangladesh</p>
           <p className="text-sm text-primary-foreground/80">
-            A premium Bangladesh-based legal practice dedicated to assisting overseas individuals and businesses with
-            compliant, jurisdiction-specific legal solutions.
+            A Bangladesh-based legal practice focused on overseas individuals and businesses with disputes, transactions
+            and risk linked to Bangladesh. All work is carried out under Bangladesh law only.
           </p>
+          <div className="space-y-1 text-xs text-primary-foreground/80">
+            <p>Practicing Advocate enrolled in Bangladesh.</p>
+            <p>Jurisdiction: Bangladesh law only.</p>
+            <p>Confidential handling of overseas matters and secure international payments.</p>
+          </div>
         </div>
-        <div className="space-y-2 text-sm text-primary-foreground/70">
-          <p>Serving clients across Europe, North America, the Middle East, and Asia-Pacific.</p>
-          <p>
-            This website provides general information only and does not constitute legal advice or a client-lawyer
-            relationship.
-          </p>
-          <p className="text-xs">© {new Date().getFullYear()} Meridian Chambers Bangladesh. All rights reserved.</p>
+        <div className="grid gap-8 text-sm md:grid-cols-4">
+          <div className="space-y-3">
+            <p className="font-semibold">Legal Services</p>
+            <ul className="space-y-2 text-primary-foreground/80">
+              <li>
+                <Link to="/special-legal-services-bangladesh" className="story-link">
+                  Special Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/other-legal-services-bangladesh" className="story-link">
+                  Other Legal Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/how-it-works" className="story-link">
+                  How It Works
+                </Link>
+              </li>
+              <li>
+                <Link to="/payment-and-fees" className="story-link">
+                  Payment & Fees
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3">
+            <p className="font-semibold">Information</p>
+            <ul className="space-y-2 text-primary-foreground/80">
+              <li>
+                <Link to="/about" className="story-link">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="story-link">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/disclaimer" className="story-link">
+                  Legal Disclaimer
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy" className="story-link">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms-of-use" className="story-link">
+                  Terms of Use
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3">
+            <p className="font-semibold">Contact & Reach Us</p>
+            <ul className="space-y-1 text-primary-foreground/80">
+              <li>
+                <a href="mailto:contact@meridianchambers.com" className="story-link">
+                  contact@meridianchambers.com
+                </a>
+              </li>
+              <li>Office Location: Bangladesh</li>
+              <li>Serving international clients across multiple time zones.</li>
+            </ul>
+          </div>
+          <div className="space-y-3">
+            <p className="font-semibold">Connect With Us</p>
+            <div className="flex gap-3 text-primary-foreground/90">
+              <a
+                href="#"
+                aria-label="Visit Facebook page"
+                className="hover-scale inline-flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/30"
+              >
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                aria-label="Visit LinkedIn profile"
+                className="hover-scale inline-flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/30"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
+              <a
+                href="mailto:contact@meridianchambers.com"
+                aria-label="Email Meridian Chambers Bangladesh"
+                className="hover-scale inline-flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/30"
+              >
+                <Mail className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-primary-foreground/20">
+        <div className="container flex flex-col gap-2 py-4 text-xs text-primary-foreground/70 md:flex-row md:items-center md:justify-between">
+          <p>© {new Date().getFullYear()} Meridian Chambers Bangladesh. All rights reserved.</p>
+          <p>This website is informational only and does not constitute legal advice or create a lawyer–client relationship.</p>
         </div>
       </div>
     </footer>
