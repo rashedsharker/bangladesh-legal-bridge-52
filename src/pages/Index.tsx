@@ -1,12 +1,12 @@
 // Update this page (the content is just a fallback if you fail to update the page)
 
 import { MainLayout } from "@/components/layout/MainLayout";
-import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
 import { ContactForm } from "@/components/ContactForm";
 import { usePageSEO } from "@/hooks/usePageSEO";
 import { Link } from "react-router-dom";
+import heroLadyJustice from "@/assets/home-hero-lady-justice.png";
 
 const Index = () => {
   usePageSEO({
@@ -18,15 +18,68 @@ const Index = () => {
 
   return (
     <MainLayout>
-      <PageHero
-        eyebrow="International Bangladesh Practice"
-        title="Trusted Legal Representation in Bangladesh for Overseas Clients"
-        subtitle="Meridian Chambers Bangladesh is a premium, Bangladesh-based legal practice focused exclusively on overseas individuals and businesses who require precise, on-the-ground legal execution without travelling."
-        primaryCtaLabel="Start Legal Process"
-        primaryCtaHref="#contact"
-        secondaryCtaLabel="View Special Services"
-        secondaryCtaHref="/special-legal-services-bangladesh"
-      />
+      <section className="hero-paper border-b">
+        <div className="container grid gap-12 py-16 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] md:items-center">
+          <div className="space-y-6 animate-fade-in">
+            <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-accent">
+              INTERNATIONAL LEGAL SERVICES | BANGLADESH
+            </p>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+              Resolving Legal Complexities
+              <br className="hidden md:block" />
+              with Clarity and Confidence
+            </h1>
+            <p className="max-w-xl text-sm md:text-base lg:text-lg font-medium text-muted-foreground">
+              Professional legal assistance in Bangladesh for overseas clients — including legal notices, money recovery,
+              investigations, contracts, and court representation.
+            </p>
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <Button
+                size="lg"
+                className="rounded-md bg-accent px-6 text-sm font-semibold text-accent-foreground hover:bg-accent/90"
+                asChild
+              >
+                <a href="#contact">Start Legal Process</a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="lg"
+                className="px-0 text-sm font-semibold text-foreground hover:bg-transparent hover:text-foreground"
+                asChild
+              >
+                <Link to="/special-legal-services-bangladesh" className="story-link">
+                  View Special Services
+                </Link>
+              </Button>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-6 text-xs md:text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+                <span>Practicing Advocate in Bangladesh</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+                <span>Serving international individuals & businesses</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+                <span>Confidential, ethics-driven legal practice</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative order-first flex justify-center md:order-none">
+            <div className="relative h-64 w-52 xs:h-72 xs:w-56 sm:h-80 sm:w-64 md:h-[340px] md:w-[260px] lg:h-[380px] lg:w-[280px]">
+              <img
+                src={heroLadyJustice}
+                alt="Bronze Lady Justice statue representing international legal services in Bangladesh"
+                className="h-full w-full object-contain object-bottom drop-shadow-xl"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="border-b bg-background/80">
         <div className="container grid gap-8 py-14 md:grid-cols-[2fr,3fr]">
@@ -34,8 +87,8 @@ const Index = () => {
             <h2 className="text-2xl md:text-3xl font-semibold">Bangladesh counsel built for distance, time zones and complexity.</h2>
             <p className="text-sm md:text-base text-muted-foreground">
               Overseas clients often struggle to coordinate matters in Bangladesh: unreliable communication, fragmented
-              updates, and limited visibility on what is actually happening on the ground. Meridian Chambers Bangladesh
-              is structured to close that gap. Every instruction is handled by a practicing Advocate, aligned with local
+              updates, and limited visibility on what is actually happening on the ground. Meridian Chambers Bangladesh is
+              structured to close that gap. Every instruction is handled by a practicing Advocate, aligned with local
               procedure and Bangladesh Bar ethics, while keeping you informed in clear, time-zone friendly language.
             </p>
           </div>
@@ -230,8 +283,8 @@ const Index = () => {
             <p className="eyebrow">Confidential initial contact</p>
             <h2 className="text-2xl md:text-3xl font-semibold">Share your Bangladesh legal issue securely.</h2>
             <p className="text-sm md:text-base text-muted-foreground">
-              Use this form to outline your matter in Bangladesh. Your submission is reviewed by a practicing Advocate.
-              No client-lawyer relationship is formed until your matter is expressly accepted in writing and terms of
+              Use this form to outline your matter in Bangladesh. Your submission is reviewed by a practicing Advocate. No
+              client-lawyer relationship is formed until your matter is expressly accepted in writing and terms of
               engagement are agreed.
             </p>
             <div className="mt-4 grid gap-3 text-xs text-muted-foreground md:grid-cols-2">
