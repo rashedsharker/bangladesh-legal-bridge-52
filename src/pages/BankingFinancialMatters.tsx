@@ -24,9 +24,9 @@ const BankingFinancialMatters = () => {
     <MainLayout>
       <PageHero
         eyebrow="Banking & Financial Matters"
-        title="Bangladesh banking and financial disputes for overseas stakeholders."
-        subtitle="When payments fail, facilities go into default or cheques are dishonoured in Bangladesh, this practice assists overseas clients in understanding and exercising their rights."
-        primaryCtaLabel="Discuss a banking issue"
+        title="Banking & Financial Legal Services"
+        subtitle="Legal assistance in cheque dishonour, loan recovery, and banking disputes for overseas clients."
+        primaryCtaLabel="Discuss Financial Matter"
         primaryCtaHref="#banking-contact"
         secondaryCtaLabel="Back to Other Legal Services"
         secondaryCtaHref="/other-legal-services-bangladesh"

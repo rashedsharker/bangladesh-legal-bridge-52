@@ -30,8 +30,8 @@ const Index = () => {
               with Clarity and Confidence
             </h1>
             <p className="max-w-xl text-sm md:text-base lg:text-lg font-medium text-muted-foreground">
-              Professional legal assistance in Bangladesh for overseas clients — including legal notices, money recovery,
-              investigations, contracts, and court representation.
+              Professional legal assistance in Bangladesh for overseas clients, including legal notices, money recovery,
+              investigations, contracts, and court representation—handled by a practicing Advocate.
             </p>
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Button

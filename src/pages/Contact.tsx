@@ -15,9 +15,9 @@ const ContactPage = () => {
     <MainLayout>
       <PageHero
         eyebrow="Contact"
-        title="Start a confidential Bangladesh legal consultation from overseas."
-        subtitle="Use this page to securely outline your Bangladesh legal matter. Your information is reviewed by a practicing Advocate, subject to conflict checks and professional rules."
-        primaryCtaLabel="Submit Contact Form"
+        title="Start Your Legal Process with Confidence"
+        subtitle="Share your legal issue and documents securely. You will receive a response within a reasonable timeframe."
+        primaryCtaLabel="Submit Your Case Securely"
         primaryCtaHref="#contact-form"
         secondaryCtaLabel="View How It Works"
         secondaryCtaHref="/how-it-works"

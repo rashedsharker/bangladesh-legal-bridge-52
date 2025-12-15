@@ -26,9 +26,9 @@ const BusinessCorporateLegal = () => {
     <MainLayout>
       <PageHero
         eyebrow="Business & Corporate Legal Services"
-        title="Bangladesh business and corporate legal support for overseas stakeholders."
-        subtitle="From single-company agreements to ongoing corporate compliance, this practice supports overseas owners, investors and counterparties with Bangladesh law issues affecting their businesses."
-        primaryCtaLabel="Discuss a business matter"
+        title="Business & Corporate Legal Services in Bangladesh"
+        subtitle="Legal support for overseas businesses and investors operating or dealing with entities in Bangladesh."
+        primaryCtaLabel="Discuss Business Legal Needs"
         primaryCtaHref="#business-contact"
         secondaryCtaLabel="Back to Other Legal Services"
         secondaryCtaHref="/other-legal-services-bangladesh"

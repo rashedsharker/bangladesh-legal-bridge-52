@@ -88,9 +88,9 @@ const OtherLegalServices = () => {
     <MainLayout>
       <PageHero
         eyebrow="Other Legal Services"
-        title="A broader range of Bangladesh legal services for overseas clients."
-        subtitle="Beyond the focused special services, Meridian Chambers Bangladesh supports a wider set of disputes, transactions and advisory needs for clients located outside Bangladesh."
-        primaryCtaLabel="Discuss your matter"
+        title="Comprehensive Legal Services in Bangladesh"
+        subtitle="In addition to our specialized services, we provide full-service legal assistance across major areas of Bangladesh law for overseas clients."
+        primaryCtaLabel="Discuss Your Legal Issue"
         primaryCtaHref="#other-services-contact"
         secondaryCtaLabel="Back to Home"
         secondaryCtaHref="/"

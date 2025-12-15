@@ -55,12 +55,12 @@ const App = () => (
             path="/legal-notice-demand-letter-bangladesh"
             element={
               <ServiceDetailPage
-                seoTitle="Legal Notice & Demand Letter in Bangladesh for Overseas Clients"
-                seoDescription="Service for drafting and issuing Bangladesh-compliant legal notices and demand letters on behalf of overseas clients."
+                seoTitle="Legal Notice & Demand Letter Services in Bangladesh"
+                seoDescription="Strategic drafting and service of legal notices in Bangladesh to resolve disputes, recover dues and enforce legal rights for overseas clients."
                 canonicalPath="/legal-notice-demand-letter-bangladesh"
                 eyebrow="Special Service: Legal Notice"
-                heroTitle="Formal legal notices and demand letters issued in Bangladesh on your behalf."
-                heroSubtitle="For overseas clients, a correctly framed legal notice under Bangladesh law can set the tone for negotiation, recovery or litigation."
+                heroTitle="Legal Notice & Demand Letter Services in Bangladesh"
+                heroSubtitle="Strategic drafting and service of legal notices to resolve disputes, recover dues, and enforce legal rightswithout immediate court action."
                 primaryCtaLabel="Start Legal Notice Process"
                 serviceName="Legal Notice & Demand Letter"
                 categoryLabel="Special Services"
@@ -72,13 +72,13 @@ const App = () => (
             path="/money-recovery-debt-collection-bangladesh"
             element={
               <ServiceDetailPage
-                seoTitle="Money Recovery & Debt Collection in Bangladesh"
-                seoDescription="Structured money recovery and debt collection services in Bangladesh for overseas individuals and businesses."
+                seoTitle="Money Recovery Services in Bangladesh"
+                seoDescription="Money recovery and debt collection services in Bangladesh for overseas individuals and businesses."
                 canonicalPath="/money-recovery-debt-collection-bangladesh"
                 eyebrow="Special Service: Money Recovery"
-                heroTitle="Structured money recovery and debt collection in Bangladesh."
-                heroSubtitle="For unpaid invoices, loans or other receivables in Bangladesh, this service combines legal notices, negotiation and, where necessary, litigation."
-                primaryCtaLabel="Discuss Money Recovery"
+                heroTitle="Money Recovery Services in Bangladesh"
+                heroSubtitle="Legal assistance for overseas clients to recover unpaid money through structured legal notice, negotiation, settlement, and litigation where required."
+                primaryCtaLabel="Start Money Recovery Process"
                 serviceName="Money Recovery & Debt Collection"
                 categoryLabel="Special Services"
                 isSpecialService
@@ -89,13 +89,13 @@ const App = () => (
             path="/legal-investigation-verification-bangladesh"
             element={
               <ServiceDetailPage
-                seoTitle="Legal Investigation & Verification in Bangladesh"
-                seoDescription="On-the-ground legal investigation and verification services in Bangladesh for overseas clients."
+                seoTitle="Legal Investigation & Verification Services in Bangladesh"
+                seoDescription="Legal investigation and verification services in Bangladesh for overseas clients."
                 canonicalPath="/legal-investigation-verification-bangladesh"
                 eyebrow="Special Service: Investigation"
-                heroTitle="Targeted legal investigation and verification in Bangladesh."
-                heroSubtitle="Before you commit to a transaction or strategy, this service verifies facts, documents and counterparties in Bangladesh."
-                primaryCtaLabel="Request Investigation"
+                heroTitle="Legal Investigation & Verification Services"
+                heroSubtitle="On-ground verification and legal investigation in Bangladesh to help overseas clients confirm facts before taking legal action."
+                primaryCtaLabel="Request Legal Investigation"
                 serviceName="Legal Investigation & Verification"
                 categoryLabel="Special Services"
                 isSpecialService
@@ -106,13 +106,13 @@ const App = () => (
             path="/contract-drafting-review-bangladesh"
             element={
               <ServiceDetailPage
-                seoTitle="Contract Drafting & Review under Bangladesh Law"
-                seoDescription="Drafting and review of Bangladesh-law contracts for overseas clients."
+                seoTitle="Contract Drafting & Legal Review under Bangladesh Law"
+                seoDescription="Drafting, reviewing, and vetting agreements under Bangladesh law for overseas clients."
                 canonicalPath="/contract-drafting-review-bangladesh"
                 eyebrow="Special Service: Contracts"
-                heroTitle="Bangladesh-law contract drafting and review for overseas parties."
-                heroSubtitle="Contracts are prepared or reviewed to reflect Bangladesh law while aligning with your commercial objectives and risk appetite."
-                primaryCtaLabel="Discuss Contract Work"
+                heroTitle="Contract Drafting & Legal Review under Bangladesh Law"
+                heroSubtitle="Drafting, reviewing, and vetting agreements to ensure legal compliance and protect the interests of overseas clients."
+                primaryCtaLabel="Send Contract for Review"
                 serviceName="Contract Drafting & Review"
                 categoryLabel="Special Services"
                 isSpecialService
@@ -124,12 +124,12 @@ const App = () => (
             element={
               <ServiceDetailPage
                 seoTitle="Case Handling & Court Representation in Bangladesh"
-                seoDescription="End-to-end case handling and court representation in Bangladesh for overseas clients."
+                seoDescription="Case handling and court representation in Bangladesh for overseas clients."
                 canonicalPath="/case-handling-court-representation-bangladesh"
                 eyebrow="Special Service: Court Representation"
-                heroTitle="Court representation in Bangladesh for selected civil and commercial matters."
-                heroSubtitle="Matters are prepared and presented before Bangladesh courts by a practicing Advocate, with written updates for overseas clients."
-                primaryCtaLabel="Discuss Court Representation"
+                heroTitle="Case Handling & Court Representation in Bangladesh"
+                heroSubtitle="Professional handling of court cases in Bangladesh with proper filing, representation, and written updates for clients residing abroad."
+                primaryCtaLabel="Discuss Case Handling"
                 serviceName="Case Handling & Court Representation"
                 categoryLabel="Special Services"
                 isSpecialService

@@ -51,9 +51,9 @@ const SpecialServices = () => {
     <MainLayout>
       <PageHero
         eyebrow="Special Services"
-        title="Focused Bangladesh legal services for clients based abroad."
-        subtitle="These special services are designed for overseas individuals and businesses who need reliable action in Bangladesh—legal notices, recoveries, verification, contracts and court representation—without travelling."
-        primaryCtaLabel="Start Special Service Inquiry"
+        title="Specialized Legal Services for Overseas Clients"
+        subtitle="Our core legal services are designed to address urgent and primary-stage legal issues in Bangladesh for individuals and businesses residing abroad."
+        primaryCtaLabel="Explore Special Services"
         primaryCtaHref="#special-services-contact"
         secondaryCtaLabel="Back to Home"
         secondaryCtaHref="/"

@@ -17,9 +17,9 @@ const PaymentAndFees = () => {
     <MainLayout>
       <PageHero
         eyebrow="Fees & Payment"
-        title="Transparent professional fees for Bangladesh legal services."
-        subtitle="Matters are scoped clearly at the outset, with written fee proposals and international payment options suitable for overseas clients."
-        primaryCtaLabel="Discuss Fees for Your Matter"
+        title="Transparent Payment Options for International Clients"
+        subtitle="Secure and compliant international payment methods for legal services rendered in Bangladesh."
+        primaryCtaLabel="View Payment Methods"
         primaryCtaHref="/contact"
         secondaryCtaLabel="View Special Services"
         secondaryCtaHref="/special-legal-services-bangladesh"

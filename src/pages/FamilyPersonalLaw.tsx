@@ -25,9 +25,9 @@ const FamilyPersonalLaw = () => {
     <MainLayout>
       <PageHero
         eyebrow="Family & Personal Law"
-        title="Family and personal law issues in Bangladesh for overseas clients."
-        subtitle="Sensitive family and personal law matters in Bangladesh—divorce, custody, succession and religion-specific rules—are handled with care, discretion and close attention to Bangladesh procedure."
-        primaryCtaLabel="Discuss a family law issue"
+        title="Family & Personal Law Services in Bangladesh"
+        subtitle="Legal assistance in personal and family matters handled with sensitivity and confidentiality for overseas clients."
+        primaryCtaLabel="Request Family Law Assistance"
         primaryCtaHref="#family-contact"
         secondaryCtaLabel="Back to Other Legal Services"
         secondaryCtaHref="/other-legal-services-bangladesh"

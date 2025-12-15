@@ -17,8 +17,8 @@ const About = () => {
     <MainLayout>
       <PageHero
         eyebrow="About the Practice"
-        title="Bangladesh counsel with an international outlook."
-        subtitle="Meridian Chambers Bangladesh is a focused legal practice led by a practicing Advocate, dedicated to representing overseas clients with matters anchored in Bangladesh."
+        title="A Bangladesh-Based Legal Practice Serving Overseas Clients"
+        subtitle="We provide professional legal assistance under Bangladesh law with a focus on clarity, ethics, and accountability."
         primaryCtaLabel="Start Legal Process"
         primaryCtaHref="/contact"
         secondaryCtaLabel="View Services"
