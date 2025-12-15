@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Facebook, Linkedin, Mail } from "lucide-react";
+import { Facebook, Linkedin, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -12,10 +13,16 @@ const navItems = [
 ];
 
 export const SiteHeader = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleNavClick = () => {
+    setMobileOpen(false);
+  };
+
   return (
     <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur-md">
       <div className="container flex items-center justify-between gap-6 py-4">
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3" onClick={handleNavClick}>
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-[var(--shadow-card)]">
             <span className="text-xl font-semibold">M</span>
           </div>
@@ -24,11 +31,14 @@ export const SiteHeader = () => {
             <span className="text-xs text-muted-foreground">Bangladesh Counsel for Overseas Clients</span>
           </div>
         </Link>
+
+        {/* Desktop navigation */}
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
+              onClick={handleNavClick}
               className={({ isActive }) =>
                 `story-link text-sm font-medium text-muted-foreground transition-colors ${
                   isActive ? "text-foreground" : "hover:text-foreground"
@@ -39,12 +49,53 @@ export const SiteHeader = () => {
             </NavLink>
           ))}
         </nav>
+
         <div className="hidden md:block">
           <Button asChild size="sm">
             <Link to="/contact">Start Legal Process</Link>
           </Button>
         </div>
+
+        {/* Mobile menu toggle */}
+        <button
+          type="button"
+          className="inline-flex items-center justify-center rounded-md border border-border bg-background p-2 text-sm text-foreground md:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((open) => !open)}
+        >
+          {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </div>
+
+      {/* Mobile navigation panel */}
+      {mobileOpen && (
+        <div className="md:hidden">
+          <div className="fixed inset-x-0 top-[3.5rem] z-50 max-h-[calc(100vh-3.5rem)] overflow-y-auto border-b bg-background/95 px-4 pb-6 pt-4 shadow-[var(--shadow-soft)]">
+            <nav className="space-y-4">
+              {navItems.map((item) => (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  onClick={handleNavClick}
+                  className={({ isActive }) =>
+                    `block text-base font-medium text-muted-foreground ${
+                      isActive ? "text-foreground" : "hover:text-foreground"
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              ))}
+              <Button asChild size="sm" className="mt-4 w-full">
+                <Link to="/contact" onClick={handleNavClick}>
+                  Start Legal Process
+                </Link>
+              </Button>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
