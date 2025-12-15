@@ -25,9 +25,9 @@ const VerificationSearchServices = () => {
     <MainLayout>
       <PageHero
         eyebrow="Verification & Search Services"
-        title="Reliable verification and search services in Bangladesh for overseas clients."
-        subtitle="Before you commit to a transaction, relationship or enforcement step involving Bangladesh, targeted searches and verification work can reduce uncertainty and surface hidden risks."
-        primaryCtaLabel="Request verification work"
+        title="Verification & Legal Search Services in Bangladesh"
+        subtitle="Court, criminal, business, and property record searches conducted for overseas clients requiring verified legal information."
+        primaryCtaLabel="Request Verification"
         primaryCtaHref="#verification-contact"
         secondaryCtaLabel="Back to Other Legal Services"
         secondaryCtaHref="/other-legal-services-bangladesh"

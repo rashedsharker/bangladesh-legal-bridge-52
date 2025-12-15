@@ -26,9 +26,9 @@ const PropertyRealEstate = () => {
     <MainLayout>
       <PageHero
         eyebrow="Property & Real Estate"
-        title="Property and real estate matters in Bangladesh managed from abroad."
-        subtitle="From disputed property in Bangladesh to pre-transaction checks and inheritance-linked assets, this practice helps overseas clients understand and act on their property position under Bangladesh law."
-        primaryCtaLabel="Discuss a property matter"
+        title="Property & Real Estate Legal Services in Bangladesh"
+        subtitle="Legal support for overseas property owners involving disputes, verification, documentation, and due diligence under Bangladesh law."
+        primaryCtaLabel="Request Property Legal Assistance"
         primaryCtaHref="#property-contact"
         secondaryCtaLabel="Back to Other Legal Services"
         secondaryCtaHref="/other-legal-services-bangladesh"

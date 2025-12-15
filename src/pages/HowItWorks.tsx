@@ -17,9 +17,9 @@ const HowItWorks = () => {
     <MainLayout>
       <PageHero
         eyebrow="Process"
-        title="A clear, disciplined process for cross-border Bangladesh matters."
-        subtitle="From first contact to final reporting, the workflow is designed around the realities of distance, time zones and documentary evidence for overseas clients."
-        primaryCtaLabel="Start the Process"
+        title="How Our Legal Process Works"
+        subtitle="A clear and transparent legal process designed specifically for international and overseas clients."
+        primaryCtaLabel="Start Legal Process"
         primaryCtaHref="/contact"
         secondaryCtaLabel="View Special Services"
         secondaryCtaHref="/special-legal-services-bangladesh"
