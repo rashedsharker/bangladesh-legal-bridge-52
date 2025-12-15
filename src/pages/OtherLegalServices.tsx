@@ -28,11 +28,12 @@ const OtherLegalServices = () => {
     {
       title: "Property & Real Estate",
       items: [
+        { label: "Property & Real Estate (Overview)", href: "/property-real-estate-bangladesh" },
         { label: "Property Disputes", href: "/property-disputes-bangladesh" },
         { label: "Land & Title Verification", href: "/land-title-verification-bangladesh" },
         { label: "Sale Deed / Agreement Review", href: "/sale-deed-agreement-review-bangladesh" },
         { label: "Property Due Diligence", href: "/property-due-diligence-bangladesh" },
-        { label: "Inheritance & Succession Matters", href: "/inheritance-succession-matters-bangladesh" },
+        { label: "Inheritance & Succession Matters", href: "/inheritance-succession-property-bangladesh" },
       ],
     },
     {
