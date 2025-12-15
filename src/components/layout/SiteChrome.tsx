@@ -192,21 +192,21 @@ export const SiteFooter = () => {
                 aria-label="Visit Facebook page"
                 className="hover-scale inline-flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/30"
               >
-                <Facebook className="h-4 w-4" />
+                <Facebook className="h-4 w-4" strokeWidth={1.6} />
               </a>
               <a
                 href="#"
                 aria-label="Visit LinkedIn profile"
                 className="hover-scale inline-flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/30"
               >
-                <Linkedin className="h-4 w-4" />
+                <Linkedin className="h-4 w-4" strokeWidth={1.6} />
               </a>
               <a
                 href="mailto:contact@meridianchambers.com"
                 aria-label="Email Meridian Chambers Bangladesh"
                 className="hover-scale inline-flex h-9 w-9 items-center justify-center rounded-full border border-primary-foreground/30"
               >
-                <Mail className="h-4 w-4" />
+                <Mail className="h-4 w-4" strokeWidth={1.6} />
               </a>
             </div>
           </div>
